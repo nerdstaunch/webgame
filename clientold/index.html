@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+   
+    <link rel="stylesheet" href="styles/main.css">
+    <title>RPS</title>
+</head>
+<body>
+
+
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-8 border chatAreaWrapper">
+                <ul id="events" class='chatArea'>
+                    <!-- client/writeEvent(text) -->
+                </ul>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-8 border">
+                <form id='chat-form' class="formArea" action="">
+                    <div class="form-row" >
+                        <div class="col-10">
+                            <input class="form-control" type="text" id="chat">
+                        </div>
+                        <div class="col-2">
+                            <button class='btn btn-primary sayButton' id='say'>Say</button>
+                        </div>
+                        <div id="win" style="display:none">
+                            You Win
+                        </div>
+                        <div id="lose" style="display:none">
+                            You Lose
+                        </div>
+
+                        <button id="winbtn">win</button>
+                    </div>
+                    <!-- <button id='rock'>Jozz</button>
+                    <button id='paper'>Beug</button>
+                    <button id='scissors'>PerfMix</button> -->
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="src/client.js"></script>
+</body>
+</html>

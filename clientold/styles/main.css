@@ -1,0 +1,35 @@
+.rps-wrapper {
+    border: 1px solid red;;
+}
+
+.chatAreaWrapper {
+    position: relative;
+    height: 380px;
+}
+
+.chatArea {
+    margin: 0;
+    list-style: none;
+    background: white;
+    overflow-y: auto;
+    max-height: 380px;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    left: 0;
+
+}
+
+.border {
+    border-left: 1px solid #e0e0e0;
+    border-right: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.formArea {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.sayButton {
+    width: 100%;
+}
