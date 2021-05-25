@@ -2,5 +2,8 @@ body {
     background-color: black;
     color: blueviolet;
     text-decoration: wavy;
-    
+}
+
+canvas {
+    border: 1px solid blueviolet;
 }

@@ -12,7 +12,6 @@ const io = socketio(server);
 const port = 8080;
 
 
-
 const User = require('./User');
 
 var clients = [];
